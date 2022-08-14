@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logoNav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#logoNav::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+}
+
+#contact-mail{
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    color: white;
+}
+#contact{
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 137, 178);
+    height: 80px;
+}
+#contact span{
+    font-size: 20px;
+    display: flex;
+}
+#contact span p{
+    padding: 0px 8px;
+}
+#mail{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80px;
+}
+#mail span{
+    font-size: 20px;
+    display: flex;
+}
+#mail span p{
+    padding: 0px 8px;
+}
+
+#logoNav ul{
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoNav ul li{
+    font-size: 20px;
+    list-style-type: none;
+    color: white;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+/*Second nav bar*/
+#container{
+    position:relative;
+    height: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 30px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+#container img{
+    height: 50px;
+    width: auto;
+}
+#container #flex ul{
+    list-style: none;
+}
+#container #flex ul li{
+    position: relative;
+    float: left;
+}
+#container #flex ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+#container #flex ul li a:hover{
+    border-radius: 10px;
+    background: #333;
+    color: #fff;
+}
+
+#container #flex ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: rgb(214, 212, 212);
+    display: none;
+    border-radius: 10px;
+}
+#container #flex ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+#container #flex ul li:hover > ul{
+    display: block;
+}
+
+#menu-bar{
+    display: none;
+}
+#container label{
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* section background part*/
+#bgOne{
+    background-image: url("bg3.jpg");
+    width: 100%;
+    height:50vh;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    box-sizing: border-box;
+  }
+
+  #bg1Div{
+    padding-top: 25vh;
+    padding-left: 80px;
+    width: 350px;
+  }
+
+  #bg1Div p{
+    font-size: 35px;
+    color: white;
+  }
+
+  #bg1Div h1{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #bg1Div ul{
+    float: left;
+    display: flex;
+  }
+  #bg1Div ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  #bg1Div ul li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  }
+
+/*form map section*/
+#formMap{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   right: 0; left: 0; 
+}
+
+#form{
+    width:45%;
+}
+
+#form h4{
+    padding-top: 3vh;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(44, 186, 211);
+}
+#form h2{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#form hr{
+    width: 80px;
+    height: 5px;
+    background-color: rgb(49, 169, 180);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#form p{
+    color: gray;
+    font-size: 18px;
+}
+
+#form .fullinput{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid silver;
+    font-size: 17px;
+}
+
+#form .halfinput{
+    width: 280px;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 17px;
+    display: inline;
+    outline: none;
+}
+#form label{
+    display: block;
+    padding-bottom: 7px;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: silver;
+}
+
+#form ul{
+    display: block;
+    padding-left: 0;
+    justify-content: left;
+}
+
+#form ul li{
+    display: inline-block;
+    margin-right: 25px;
+    padding-right: 35px;
+    width: 250px;
+}
+
+#form button{
+    margin-top: 25px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(49, 195, 244);
+    color: white;
+    border: 2px solid rgb(49, 195, 244) ;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(232, 60, 60);
+}
+
+#form input:focus{
+ border-color: crimson;
+}
+
+#form textarea:focus{
+    border-color: crimson;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#map{
+    width: 45%;
+}
+#map iframe{
+    width: 100%;
+    height: 84vh;
+    padding-top: 5vh;
+}
+
+
+/* Contact section*/
+
+#contSection{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;;
+   right: 0; left: 0; 
+   bottom: 0px;
+   margin-top: 50px;
+} 
+#contSection .innerCont{
+    border: 2px solid rgba(236, 236, 236, 0.815);
+    padding: 16px 64px;
+    margin: 5px 28px;
+    text-align: center;
+    width: 270px;
+    border-radius: 5px;
+    background-color: rgba(236, 236, 236, 0.815);
+}
+  
+#contSection .innerCont .icons{
+    height: 100px;
+    width: 100px;
+    color: rgb(32, 152, 249);
+    padding-top: 10px;
+}
+  
+#contSection .innerCont .h3Heading{
+    font-size: 33px;
+    padding: 10px;
+}
+  
+#contSection .innerCont p{
+    font-size: 18px;
+    padding-top: 7px;
+    color: gray;
+}
+
+
+/*scroll top button*/
+.scrollTop-style{
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    z-index: 1;
+  }
+  
+  #myBtn {
+    display: none;
+    background-color: rgb(47, 208, 237);
+    padding: 14px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none; 
+    outline: none;
+    }
+  
+  #myBtn .scrolltop{
+    width: 3rem;
+    height: 3rem;
+    color: white;
+  }

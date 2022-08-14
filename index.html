@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template1 responsive</title>
+    <link rel="stylesheet" href="template1.css">
+    <link rel="stylesheet" media="Screen and (max-width:1100px)" href="temp1_phone.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <div id="logoNavContainer">
+    <nav id="logoNav">
+        <div id="contact-mail">
+            <div id="contact">
+                <span>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>Phone:+1 800 722 8789</p>
+                </span>
+            </div>
+            <div id="mail">
+                <span>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p>info@denteur.com</p>
+                </span>
+            </div>
+        </div>
+
+        <ul>
+          <li class="strline"><a href="#"></a>|</li>
+          <li><a href="#"></a><ion-icon name="logo-facebook"></ion-icon></li>
+          <li><a href="#"></a><ion-icon name="logo-twitter"></ion-icon></li>
+          <li><a href="#"></a><ion-icon name="logo-linkedin"></ion-icon></li>
+        </ul>
+    </nav>
+    </div>
+
+    <!--Second nav bar-->
+    <section id="container">
+        <img src="denteur.png">
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><ion-icon name="menu-outline"></ion-icon></label>
+
+        <nav id="flex">
+            <ul>
+                <li><a href="#">Home<ion-icon name="chevron-down-outline"></ion-icon></a>
+                   <ul>
+                    <li><a href="#">Home1</a></li>
+                    <li><a href="#">Home2</a></li>
+                    <li><a href="#">Home3</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Pages<ion-icon name="chevron-down-outline"></ion-icon></a>
+                   <ul>
+                    <li><a href="#">Page1</a></li>
+                    <li><a href="#">Page2</a></li>
+                    <li><a href="#">Page3</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Departments<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <ul>
+                    <li><a href="#">Department1</a></li>
+                    <li><a href="#">Department2</a></li>
+                    <li><a href="#">Department3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blogs<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <ul>
+                        <li><a href="#">Blog1</a></li>
+                        <li><a href="#">Blog2</a></li>
+                        <li><a href="#">Blog3</a></li>
+                       </ul>
+                </li>
+                <li><a href="#">Contact<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <ul>
+                        <li><a href="#">Contact1</a></li>
+                        <li><a href="#">Contact2</a></li>
+                        <li><a href="#">Contact3</a></li>
+                       </ul>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="bgOne">
+        <div id="bg1Div">
+         <p>Denteur</p>
+         <h1>Contact Us</h1>
+         <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#"><ion-icon name="chevron-forward-outline"></ion-icon></a></li>
+          <li><a href="#">Contact us</a></li>
+         </ul>
+        </div>
+    </section>
+
+    <section id="formMap">
+        <div id="form">
+            <h4>Our Office</h4>
+            <h2>Get In Touch</h2>
+            <hr>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            
+            <form action="">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" class="fullinput">
+              
+                <ul>
+                  <li>
+               <label for="email">E-mail address</label>
+                <input type="Email" id="email" class="halfinput"></li>
+                
+                <li>
+                <label for="phone">Please enter your phone</label>
+                <input type="number" id="phone" class="halfinput"></li>
+              </ul>
+      
+                <label for="msg">Your message</label>
+                <textarea id="msg" class="fullinput" rows="6"></textarea>
+      
+                <button>Send message</button>      
+            </form>
+        </div>
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12103.863332210074!2d-73.99860631387568!3d40.67472176937369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a560db693e3%3A0xb05e8b0bdf854b54!2sGowanus%2C%20Brooklyn%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1657389377951!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <div id="contSection">
+        <div class="innerCont">
+          <ion-icon name="call" class="icons"></ion-icon>
+          <h3 class="h3Heading">Phone</h3>
+          <p>123-654-7852</p>
+          <p>456-741-9853</p>
+        </div>
+      
+        <div class="innerCont">
+          <ion-icon name="location" class="icons"></ion-icon>
+          <h3 class="h3Heading">Address</h3>
+          <p>PO BOX 3319j NW 58th st miami</p>
+          <p>Florida</p>
+        </div>
+      
+        <div class="innerCont">
+          <ion-icon name="mail" class="icons"></ion-icon>
+          <h3 class="h3Heading">Email</h3>
+          <p>info@denteur.com</p>
+          <p>support@denteur.com</p>
+        </div>
+      </div>
+
+    
+    <div class="scrollTop-style">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <ion-icon name="chevron-up-outline" class="scrolltop"></ion-icon>
+    </button>
+    </div>
+  
+    <script>
+      mybutton = document.getElementById("myBtn");
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+      }
+        </script>
+
+</body>
+</html>
